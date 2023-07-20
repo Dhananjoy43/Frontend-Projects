@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login Form Design</title>
+</head>
+
+<body>
+    <form class="card" action="#" onsubmit="formControl()">
+        <div class=" cardHeader">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <h1>Login</h1>
+        </div>
+        <div class="formBody">
+            <div class="inputDiv">
+                <label for="Username">Username:</label>
+                <div>
+                    <input type="text" name="Username" minlength="5" required>
+                </div>
+            </div>
+            <div class="inputDiv">
+                <label for="Password">Password:</label>
+                <div>
+                    <input type="password" name="Password" id="password" required minlength="5">
+                    <i id="openEye" class="fa-solid fa-eye" onclick="toogle()"></i>
+                    <i id="closeEye" class="fa-solid fa-eye-slash" onclick="toogle()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="formButton">
+            <button type="submit">Login</button>
+        </div>
+        <div class=" formFooter">
+            <span>Don't have an account?</span>
+            <a href="/signup">Sign up here!</a>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
